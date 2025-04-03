@@ -1,0 +1,135 @@
+<!-- ======= Breadcrumbs ======= -->
+<section  class="bg_it  d-flex align-items-center justify-content-center " style="height: 400px;">
+  <div class="align-items-center justify-content-center " >
+    <h1 class="text-white display-2">
+      <% if I18n.locale == :de %>
+        Informationstechnologie
+      <% end %>
+      <% if I18n.locale == :en %>
+        Information Technology
+      <% end %>
+    </h2 >
+  </div>
+</section>
+<!-- End Breadcrumbs -->
+<section class="inner-page">
+  <div class="container">
+    <h3 class="display-6 text-center">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <div class="icon"><i class='bx bx-server'></i></div>
+      </div>
+      <% if I18n.locale == :de %>
+        Informationstechnologie: Treiber des ständigen Wandels
+      <% end %>
+      <% if I18n.locale == :en %>
+       Information technology: The driver of constant change
+      <% end %>
+    </h3>
+    <p class="my-3">
+      <% if I18n.locale == :de %>
+        Die Informationstechnologie hat in den letzten Jahrzehnten tiefgreifendere und umfassendere Veränderungen durchlaufen als jede andere Branche. Schlüsselinnovationen wie der Personal Computer, das Internet und Smartphones haben die Welt schon im 20. Jahrhundert revolutioniert. Heute prägen wegweisende Technologien wie Cloud Computing, künstliche Intelligenz, Big Data, Blockchain und das aufkommende Quantencomputing die Entwicklungen und bestimmen die Richtung zukünftiger Innovationen.
+        Ehemals führende Unternehmen sind vom Markt verschwunden,  neue Akteure sind in kürzester Zeit an die Spitze aufgestiegen.
+      <% end %>
+      <% if I18n.locale == :en %>
+        In recent decades, information technology has undergone more profound and comprehensive changes than any other industry. Key innovations such as the personal computer, the internet and smartphones revolutionized the world back in the 20th century. Today, pioneering technologies such as cloud computing, artificial intelligence, big data, blockchain and emerging quantum computing are shaping developments and determining the direction of future innovations. Former leading companies have disappeared from the market, while new players have risen to the top in a very short space of time. 
+      <% end %>
+    </p>
+    <p>
+      <% if I18n.locale == :de %>
+        Der schnelle Wandel setzt Unternehmen und Fachkräfte einem enormen Anpassungsdruck aus: Wissen und Fähigkeiten, die heute aktuell sind, können morgen schon überholt sein. Kontinuierliches Lernen und Anpassung sind daher unerlässlich, um in diesem Umfeld wettbewerbsfähig zu bleiben.
+      <% end %>
+      <% if I18n.locale == :en %>
+        Rapid change puts companies and skilled workers under enormous pressure to adapt: Knowledge and skills that are current today may be outdated tomorrow. Continuous learning and adaptation are therefore essential in order to remain competitive in this environment. 
+      <% end %>
+    </p>
+    <hr />
+    <h5 class="display-6 text-center my-3">
+        <% if I18n.locale == :de %>Kunden und Positionen <% end %>
+      <% if I18n.locale == :en %>Clients and Positions  <% end %>
+    </h5>
+    <p>
+      <% if I18n.locale == :de %>
+        Wir unterstützen einige der weltweit größten Anbieter von IT Hard- und Softwaresystemen bei der Besetzung von 
+        Führungs- und Fachpositionen im Vertrieb und im Presales Consulting.
+      <% end %>
+      <% if I18n.locale == :en %>
+        We support some of the world's largest providers of IT hardware and software systems in filling management and specialist positions in sales and presales consulting. 
+      <% end %>
+    </p>
+    <div class="row mt-3">
+      <hr />
+      <h5 class="display-6 text-center my-3">
+        <% if I18n.locale == :de %>Unsere Berater für Informationstechnologie<% end %>
+        <% if I18n.locale == :en %>Our consultants for information technology<% end %>
+      </h5>
+      <div class="d-flex justify-content-center">
+        <div class="card mx-2" style="width: 22rem;">
+          <img src="<%= asset_path('ts_profile.png') %>" class="card-img-top" alt="Thorsten Schwartz">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to "Thorsten Schwartz", profile_ts_path %>
+              <br />
+              Partner
+            </h5>
+            <p class="card-text">
+              <i class="bi bi-telephone-fill"></i>&nbsp;
+              +49 170 7659480 
+              <br />
+              <a href="mailto:schwartz@steinmetzpartners.com">
+                <i class="bi bi-envelope-fill"></i> &nbsp;
+                schwartz@steinmetzpartners.com 
+              </a>
+            </p>
+            <div class="social text-center" style="font-size: 30px;"  >
+              <a href="https://www.xing.com/profile/Thorsten_Schwartz/cv" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/thorsten-schwartz-053924/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="card mx-2" style="width: 22rem;">
+          <img src="<%= asset_path('js_800x540.png') %>" class="card-img-top  bg-secondary " alt="Jürgen Schibilski">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to "Jürgen Schibilski", profile_js_path %>
+              <br />
+              Partner
+            </h5>
+            <p class="card-text">
+              <i class="bi bi-telephone-fill"></i>&nbsp;
+              +49 170 7863250
+              <br />
+              <a href="mailto:schibilski@steinmetzpartners.com ">
+                <i class="bi bi-envelope-fill"></i> &nbsp;
+                schibilski@steinmetzpartners.com 
+              </a>
+            </p>
+            <div class="social text-center" style="font-size: 30px;"  >
+              <a href="https://www.xing.com/profile/Juergen_Schibilski" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/juergenschibilski/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="card mx-2" style="width: 22rem;">
+          <img src="<%= asset_path('hg_resize.png') %>" class="card-img-top  bg-secondary " style="height= 270px;" alt="Heiner Gräb">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to "Karl-Heinrich (Heiner) Gräb", profile_hg_path %>
+              <br />
+              Partner
+            </h5>
+            <p class="card-text">
+              <i class="bi bi-telephone-fill"></i>&nbsp;
+              +49 174 3129604
+              <br />
+              <a href="mailto: graeb@steinmetzpartners.com ">
+                <i class="bi bi-envelope-fill"></i> &nbsp;
+                graeb@steinmetzpartners.com 
+              </a>
+            </p>
+            <div class="social text-center" style="font-size: 30px;"  >
+              <a href="https://www.linkedin.com/in/karl-heinrich-heiner-graeb-59721339/" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/karl-heinrich-heiner-graeb-59721339/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

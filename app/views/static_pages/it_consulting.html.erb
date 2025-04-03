@@ -1,0 +1,142 @@
+<!-- ======= Breadcrumbs ======= -->
+<section  class="bg_itconsult  d-flex align-items-center justify-content-center " style="height: 400px;">
+  <div class="align-items-center justify-content-center " >
+    <h1 class="text-white display-2">
+      <% if I18n.locale == :de %>
+        IT Beratung 
+      <% end %>
+      <% if I18n.locale == :en %>
+        IT consulting
+      <% end %>
+    </h2 >
+  </div>
+</section>
+<!-- End Breadcrumbs -->
+<section class="inner-page">
+  <div class="container">
+    <h3 class="display-6 text-center">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <div class="icon"><i class="bx bx-user"></i></div>
+      </div>
+      <% if I18n.locale == :de %>
+        IT Beratung: Meister des Wandels gesucht
+      <% end %>
+      <% if I18n.locale == :en %>
+        IT consulting: Master of transformation in demand 
+      <% end %>
+    </h3>
+    <p class="my-3">
+      <% if I18n.locale == :de %>
+        Die IT-Beratung steht unter einem stärkeren Anpassungsdruck als viele andere Branchen – 
+        vor allem bedingt durch  Megatrends wie Cloud Computing, Künstliche Intelligenz, Big Data, Web 3.0, Cyber Security oder Blockchain.
+
+        Dieser Wandel hat mittlerweile auch den Mittelstand erreicht. Wie große Unternehmen verlagern immer mehr mittelständische Betriebe ihre IT in die Cloud. Dadurch werden Geschäftsmodelle, die auf den Betrieb von IT-Systemen beim Kunden ausgerichtet sind, zunehmend obsolet. Insbesondere IT-Systemhäuser, die traditionell auf Mittelstandskunden spezialisiert sind, stehen vor der Herausforderung, ihre Strategien grundlegend anzupassen.
+      <% end %>
+      <% if I18n.locale == :en %>
+      IT consulting is under greater pressure to adapt than many other sectors - primarily due to megatrends such as cloud computing, artificial intelligence, big data, Web 3.0, cyber security and blockchain. This change has now also reached SMEs. Like large companies, more and more SMEs are moving their IT to the cloud. As a result, business models that are geared towards operating IT systems on the customer's premises are becoming increasingly obsolete. IT system houses in particular, which traditionally specialize in SME customers, are facing the challenge of fundamentally adapting their strategies. 
+      <% end %>
+    </p>
+    <p>
+      <% if I18n.locale == :de %>
+        Solche disruptiven Veränderungen eröffnen jedoch auch neue Chancen. Führungskräfte und Mitarbeiter, die bereit sind, ihre bisherigen Kenntnisse zu hinterfragen und neue Kompetenzen in zukunftsträchtigen Bereichen wie Cloud Architecture & Security, Change Management, Data Management & Data Migration zu entwickeln, können von diesem Wandel profitieren. Genau solche Talente identifizieren und vermitteln wir für Ihr Unternehmen.
+      <% end %>
+      <% if I18n.locale == :en %>
+        However, such disruptive changes also open up new opportunities. Managers and employees who are prepared to question their previous knowledge and develop new skills in promising areas such as cloud architecture & security, change management, data management & data migration can benefit from this change. We identify and place precisely such talent for your company. 
+      <% end %>
+    </p>
+    <hr />
+    <h5 class="display-6 text-center my-3">
+      <% if I18n.locale == :de %>Kunden und Positionen <% end %>
+      <% if I18n.locale == :en %>Clients and Positions  <% end %>
+    </h5>
+    <p>
+      <% if I18n.locale == :de %>
+        Wir unterstützen einige der in  Deutschland führenden Systemhäuser und andere Anbietern von IT Services bei der Besetzung von 
+        <strong>
+          Führungs- und Fachpositionen im Vertrieb und in der IT Beratung.
+        </strong>
+      <% end %>
+      <% if I18n.locale == :en %>
+        We support some of Germany's leading system houses and other providers of IT services in filling 
+        <strong>
+          management and specialist positions in sales and IT consulting. 
+        </strong>
+      <% end %>
+    </p>
+    <div class="row mt-3">
+      <hr />
+      <h5 class="display-6 text-center my-3">
+        <% if I18n.locale == :de %>Unsere Berater für IT Beratung<% end %>
+        <% if I18n.locale == :en %>Our consultants for IT consulting<% end %>
+      </h5>
+      <div class="d-flex justify-content-center">
+        <div class="card mx-2" style="width: 22rem;">
+         <img src="<%= asset_path('hg_resize.png') %>" class="card-img-top  bg-secondary " style="height= 270px;" alt="Heiner Gräb">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to "Karl-Heinrich (Heiner) Gräb", profile_hg_path %>
+              <br />
+              Partner
+            </h5>
+            <p class="card-text">
+              <i class="bi bi-telephone-fill"></i>&nbsp;
+              +49 174 3129604
+              <br />
+              <a href="mailto: graeb@steinmetzpartners.com ">
+                <i class="bi bi-envelope-fill"></i> &nbsp;
+                graeb@steinmetzpartners.com 
+              </a>
+            </p>
+            <div class="social text-center" style="font-size: 30px;"  >
+              <a href="https://www.linkedin.com/in/karl-heinrich-heiner-graeb-59721339/" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/karl-heinrich-heiner-graeb-59721339/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="card mx-2" style="width: 22rem;">
+          <img src="<%= asset_path('ts_profile.png') %>" class="card-img-top" alt="Thorsten Schwartz">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to "Thorsten Schwartz", profile_ts_path %>
+              <br />
+              Partner
+            </h5>
+            <p class="card-text">
+              <i class="bi bi-telephone-fill"></i>&nbsp;
+              +49 170 7659480 
+              <br />
+              <a href="mailto:schwartz@steinmetzpartners.com">
+                <i class="bi bi-envelope-fill"></i> &nbsp;
+                schwartz@steinmetzpartners.com 
+              </a>
+            </p>
+            <div class="social text-center" style="font-size: 30px;"  >
+              <a href="https://www.xing.com/profile/Thorsten_Schwartz/cv" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/thorsten-schwartz-053924/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="card mx-2" style="width: 22rem;">
+          <img src="<%= asset_path('js_800x540.png') %>" class="card-img-top  bg-secondary " alt="Jürgen Schibilski">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to "Jürgen Schibilski", profile_js_path %>
+              <br />
+              Partner
+            </h5>
+            <p class="card-text">
+              <i class="bi bi-telephone-fill"></i>&nbsp;
+              +49 170 7863250
+              <br />
+              <a href="mailto:schibilski@steinmetzpartners.com ">
+                <i class="bi bi-envelope-fill"></i> &nbsp;
+                schibilski@steinmetzpartners.com 
+              </a>
+            </p>
+            <div class="social text-center" style="font-size: 30px;"  >
+              <a href="https://www.xing.com/profile/Juergen_Schibilski" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/juergenschibilski/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

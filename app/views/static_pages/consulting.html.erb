@@ -1,0 +1,117 @@
+<!-- ======= Breadcrumbs ======= -->
+<section  class="bg_manconsult  d-flex align-items-center justify-content-center " style="height: 400px;">
+  <div class="align-items-center justify-content-center " >
+    <h1 class="text-white display-2">
+      <% if I18n.locale == :de %>
+        Managementberatung
+      <% end %>
+      <% if I18n.locale == :en %>
+        Management Consulting
+      <% end %>
+    </h2 >
+  </div>
+</section>
+<!-- End Breadcrumbs -->
+<section class="inner-page">
+  <div class="container">
+    <h3 class="display-6 text-center">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <div class="icon"><i class="bx bx-user"></i></div>
+      </div>
+      <% if I18n.locale == :de %>
+        Früher dran sein, Konsequenzen antizipieren 
+      <% end %>
+      <% if I18n.locale == :en %>
+        Be there earlier, anticipate consequences
+      <% end %>
+    </h3>
+    <p class="my-3">
+      <% if I18n.locale == :de %>
+        Wer in der Beratung erfolgreich sein will, muss über tiefere Expertise verfügen als seine Kunden, Trends frühzeitig erkennen und sich schneller mit neuen Technologien auseinandersetzen. Nur so können Kunden rechtzeitig über die Auswirkungen informiert und zielgerichtet beraten werden. Geschäftsmodelle und Strategien müssen kontinuierlich vor dem Hintergrund neuer Entwicklungen geprüft und angepasst werden, um ihre Tragfähigkeit zu sichern.
+      <% end %>
+      <% if I18n.locale == :en %>
+        If you want to be successful in consulting, you need to have more in-depth expertise than your customers, recognize trends early on and get to grips with new technologies more quickly. This is the only way to inform customers about the effects in good time and provide targeted advice. Business models and strategies must be continuously reviewed and adapted in light of new developments in order to ensure their sustainability.
+      <% end %>
+    </p>
+    <p>
+      <% if I18n.locale == :de %>
+        Es genügt nicht, Expertise aktuell zu halten. Entscheidend ist, die Konsequenzen neuer Trends für die Kunden frühzeitig zu antizipieren und darauf abgestimmte, praktikable Lösungen zu entwickeln.
+      <% end %>
+      <% if I18n.locale == :en %>
+        It is not enough to keep expertise up to date at all times. It is crucial to anticipate the consequences for customers and develop tailored solutions.
+      <% end %>
+    </p>
+    <hr />
+    <h5 class="display-6 text-center my-3">
+      <% if I18n.locale == :de %>Positionen, die wir besetzen<% end %>
+      <% if I18n.locale == :en %>Positions we fill<% end %>
+    </h5>
+    <p>
+      <% if I18n.locale == :de %>
+        Wir haben u. a. eine der BIG FOUR und eine weitere aus den globalen top 10 Managementberatungsgesellschaften als Kunde. Wir besetzen     
+        <strong>
+          Führungs- und Fachpositionen in Beratungsgebieten wie Supply Chain Management, Customer Management, Service Management, Finance, Risk & Compliance Management
+        </strong>
+      <% end %>
+      <% if I18n.locale == :en %>
+        Our clients include one of the BIG FOUR and another from the global top 10 management consultancies. We fill  
+        <strong>
+          management and specialist positions in consulting areas such as Supply Chain Management, Customer Management, Service Management, Finance, Risk & Compliance Management 
+        </strong>
+      <% end %>
+    </p>
+    <div class="row mt-3">
+      <hr />
+      <h5 class="display-6 text-center my-3">
+        <% if I18n.locale == :de %>Unsere Berater für Managementberatung<% end %>
+        <% if I18n.locale == :en %>Our consultants for management consulting<% end %>
+      </h5>
+      <div class="d-flex justify-content-center">
+        <div class="card mx-2" style="width: 22rem;">
+          <img src="<%= asset_path('hs_474x316.png') %>" class="card-img-top" alt="Herbert K. Schmoll">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to "Herbert K. Schmoll", profile_hs_path %>
+              <br />
+              Partner
+            </h5>
+            <p class="card-text">
+              <i class="bi bi-telephone-fill"></i>&nbsp;
+              +49 172 7693497  
+              <br />
+              <a href="mailto:hks@steinmetzpartners.com ">
+                <i class="bi bi-envelope-fill"></i> &nbsp;
+                hks@steinmetzpartners.com 
+              </a>
+            </p>
+            <div class="social text-center" style="font-size: 30px;"  >
+              <a href="https://www.xing.com/profile/HerbertK_Schmoll/cv" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/herbert-k-schmoll-65319715/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="card mx-2" style="width: 22rem;">
+          <img src="<%= asset_path('hg_400.png') %>" class="card-img-top" alt="Karl-Heinrich (Heiner) Gräb">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to "Karl-Heinrich (Heiner) Gräb", profile_hg_path %>
+              <br />
+              Partner
+            </h5>
+            <p class="card-text">
+              <i class="bi bi-telephone-fill"></i>&nbsp;
+              +49 174 3129604
+              <br />
+              <a href="mailto: graeb@steinmetzpartners.com ">
+                <i class="bi bi-envelope-fill"></i> &nbsp;
+                graeb@steinmetzpartners.com 
+              </a>
+            </p>
+            <div class="social text-center" style="font-size: 30px;"  >
+              <a href="https://www.linkedin.com/in/karl-heinrich-heiner-graeb-59721339/" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/karl-heinrich-heiner-graeb-59721339/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

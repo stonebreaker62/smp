@@ -1,0 +1,23 @@
+.hero1 {
+    background: url("why-us.png");
+}
+
+.btn-custom-sm {
+    padding: 0.2rem 0.4rem; /* Anpassen der Innenpolsterung */
+    font-size: 0.6rem; /* Anpassen der Schriftgröße */
+    line-height: 1; /* Anpassen der Zeilenhöhe */
+}
+
+.button-group {
+    display: flex;
+    gap: 2px; /* Abstand zwischen den Buttons */
+}
+
+section {
+    margin-top: 5px !important; /* Entfernt äußeren Abstand */
+    padding-top: 2px !important; /* Entfernt inneren Abstand */
+}
+
+.bg-secondary-subtle {
+    background-color: var(--bs-secondary-bg-subtle) !important;
+}

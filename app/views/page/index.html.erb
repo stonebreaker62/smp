@@ -1,0 +1,155 @@
+<!-- ======= Hero Section ======= -->
+<section  id="central" class="bg_header  d-flex align-items-center justify-content-center " style="height: 700px;">
+  <div class="align-items-center justify-content-center " >
+    <h6 class="text-center   " style="margin-top: 250px;  " >
+      <span class="fw-bold text-uppercase" style="font-size: 18px; " ><span class="text-white"><span style="font-size: 22px;">S</span>teinmetz</span><span style="border-radius: 5px;" class="text-danger pt-2 pb-1 pe-1 ps-1"><span style="font-size: 22px;">P</span>artners </span></span>
+    </h6>
+    <h1 class="text-white display-2 text-center" style= "margin-top: 10px;">
+      <% if I18n.locale == :de %>
+       Talente finden, Karrieren formen 
+       <br /> – gemeinsam wachsen
+      <% end %>
+      <% if I18n.locale == :en %>
+        Finding talent, shaping careers - grow together
+      <% end %>
+    </h1>
+    <div class="ms-5 mt-5">
+      <%= link_to t(:about_us), about_path, class: " btn btn-danger" %>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+<main id="main">
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services section-bg">
+    <div class="container"  >
+      <div class="row">
+        <div class="col-xl-3 col-md-6  text-end"  >
+          <h4><a href="#services">Executive Search</a></h4>
+          <h4><a href="#services">Expert Search</a></h4>
+          <h4><a href="#services">Career Development</a></h4>
+        </div>
+        <div class="col-xl-9 col-md-6    mt-4 mt-md-0"  >
+          <% if I18n.locale == :de %>
+            <p class="fw-bold">
+              Wir unterstützen einige der weltweit führenden Unternehmen aus den Branchen Informationstechnologie, Finanzdienstleistungen sowie Management-, IT- und Rechtsberatung bei der Besetzung von Management- und Fachpositionen.
+            </p>
+            <p>
+              <strong>
+                Unsere Expertise basiert auf umfassender Erfahrung: 
+              </strong>
+              entweder durch frühere Führungspositionen oder durch langjährige Tätigkeit in der Personalberatung in unseren Fokusbranchen. 
+              Wir greifen auf ein belastbares Netzwerk zurück, das in Jahrzehnten in Management- oder Personalberatungsfunktionen gewachsen ist, sowie auf einen in mehr als 15 Jahren systematisch aufgebauten  Talent-Pool mit mehr als 30.000 Führungskräften und Professionals aus unseren Fokus-Branchen.
+            </p>
+            <p>
+              <strong>
+                Beratungskompetenz durch Fokussierung: 
+              </strong>
+              Wir konzentrieren uns gezielt auf ausgewählte Branchen und spezifische Positionen. So gewährleisten wir, dass unsere Lösungen präzise auf die individuellen Anforderungen unserer Kunden abgestimmt sind.
+            </p>
+          <% end %>
+          <% if I18n.locale == :en %>
+            <p class="fw-bold">
+              We support some of the world's leading companies in the information technology, financial services, management, IT and legal consulting sectors in filling management and specialist positions.
+            </p>
+            <p>
+              <strong>
+                Our expertise is based on extensive experience: 
+              </strong>
+              either through previous management positions or through many years in executive search in our focus industries. We draw on a resilient network that has grown over decades in management or executive search functions, as well as a candidate pool of more than 30,000 executives and professionals from our focus industries that has been systematically built up over more than 15 years.
+            </p>
+            <p>
+              <strong>
+                Consulting expertise through focus:
+              </strong>
+              We concentrate specifically on selected sectors and specific positions. In this way, we ensure that our solutions are precisely tailored to the individual requirements of our clients.
+            </p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Services Section -->
+  <section id="skills" class="skills">
+    <div class="container"  >
+      <div class="section-title mt-5">
+        <h2 class="mt-5">
+          <%= t(:principles) %>
+        </h2>
+      </div>
+    </div>
+    <div class="container"  >
+      <div class="row">
+        <div class="col-12">
+          <% if I18n.locale == :de %>
+            <p class="text-start">
+              Personalberater erhalten  Zugang zu einer Vielzahl persönlicher Informationen und Dokumente, 
+              darunter Lebensläufe, Kompetenzprofile, Projektlisten und Referenzen – mehr als in den meisten 
+              anderen Berufsfeldern.
+
+              Daher sind klare Grundsätze unerlässlich, die den Umgang, die Speicherung und die Weitergabe dieser 
+              sensiblen Unterlagen regeln. 
+              Ebenso wichtig sind Richtlinien, die eine seriöse und vertrauliche Zusammenarbeit mit Kunden und Kandidaten gewährleisten.
+            </p>
+          <% end %>
+          <% if I18n.locale == :en %>
+            <p class="text-start">
+             More personal documents such as CVs, skills profiles, project lists and references are entrusted to executive search consultants than in almost any other profession. It is therefore essential to have clear principles governing the handling, storage and disclosure of these sensitive documents. Equally important are guidelines that ensure serious and confidential cooperation with clients and candidates.
+            </p>
+          <% end %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 d-flex align-items-center"  >
+          <%= image_tag('hands_800x600.png', class: "card-img-top"   ) %>
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content"  >
+          <ol>
+            <li>
+              <% if I18n.locale == :de %>
+                <p class="fw-bold">Keine Parallel-Vorstellungen</p>
+                <p class="text-start">
+                  Die uns im Rahmen eines Suchauftrags von Kandidatinnen und Kandidaten überlassenen Unterlagen (z. B. Lebensläufe, Projektlisten, Zeugnisse) werden ausschließlich dem jeweiligen Auftraggeber vorgelegt. Eine parallele Weiterleitung an andere Unternehmen erfolgt nicht.
+                </p>
+              <% end %>
+              <% if I18n.locale == :en %>
+                <p class="fw-bold"> No parallel presentations</p>
+                <p class="text-start">
+                      The documents provided to us by candidates as part of a search assignment (e.g. CVs, project lists, references) are submitted exclusively to the respective client. They will not be forwarded in parallel to other companies.
+                </p>
+              <% end %>
+            </li>
+            <li>
+              <% if I18n.locale == :de %>
+                <p class="fw-bold mt-3 "> Vertraulichkeit</p>
+                <p class="text-start">
+                  Wir behandeln sämtliche Dokumente und persönlichen Daten von Kunden und Kandidaten mit höchster Vertraulichkeit. Die Speicherung und Verarbeitung dieser Daten erfolgt stets im Einklang mit den Vorgaben der Datenschutzgrundverordnung (DSGVO). Dokumente von Kandidatinnen und Kandidaten geben wir ausschließlich mit deren ausdrücklichem Einverständnis an unsere Kunden weiter.
+                </p>
+              <% end %>
+              <% if I18n.locale == :en %>
+                <p class="fw-bold mt-3 "> Confidentiality</p>
+                <p class="text-start">
+                      We treat all documents and personal data of clients and candidates with the utmost confidentiality. This data is always stored and processed in accordance with the provisions of the General Data Protection Regulation (GDPR). We only pass on documents from candidates to our clients with their express consent.
+                </p>
+              <% end %>
+            </li>
+            <li>
+              <% if I18n.locale == :de %>
+                <p class="fw-bold mt-3">Keine Kunden-Abwerbungen  </p>
+                <p class="text-start">
+                 Unser Geschäftsmodell schließt unethische Praktiken konsequent aus. Es kommt bei uns nicht vor, dass ein Berater Positionen bei einem unserer Kunden besetzt, während ein anderer Berater Mitarbeiter dieses Unternehmens abwirbt, um sie bei einem seiner Kunden zu platzieren. Solche Vorgehensweisen widersprechen unseren Grundsätzen und finden bei uns keinen Platz.
+                </p>
+              <% end %>
+              <% if I18n.locale == :en %>
+                <p class="fw-bold mt-3">  No solicitation of candidates from our clients</p>
+                <p class="text-start">
+                     Our business model consistently excludes unethical practices. We do not allow a consultant to fill positions at one of our clients while another consultant poaches employees from that company to place them with one of their clients. Such practices contradict our principles and have no place with us.
+                </p>
+              <% end %>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+</main><!-- End #main -->

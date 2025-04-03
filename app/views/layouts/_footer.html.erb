@@ -1,0 +1,60 @@
+<!-- ======= Footer ======= -->
+<footer id="footer"  >
+  <div class="footer-top" style="background: #cccccc;" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 footer-contact">
+          <div class="logo">
+            <span class="fw-bold text-uppercase" style="font-size: 18px;" ><span class="text-dark"><span style="font-size: 22px;">S</span>teinmetz</span><span style="border-radius: 5px;" class="text-danger pt-2 pb-1 pe-1 ps-1"><span style="font-size: 22px;">P</span>artners </span></span>
+          </div>
+          <p class="mt-2">
+            SteinmetzPartners GmbH & Co. KG <br />
+            Thorwaldsenplatz 1 <br>
+            60596 Frankfurt<br>
+            <br>
+            <i class="bi-telephone-fill me-2"></i> +49 69 2601-6668<br>
+            <i class="bi-envelope me-2"></i> info@steinmetzpartners.com<br>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4> Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <%= link_to "Home", root_path(anchor: "central")   %></li>
+            <li><i class="bx bx-chevron-right"></i> <%= link_to t('about_us') , about_path   %></li>
+            <li><i class="bx bx-chevron-right"></i> <%= link_to t('industries')  , industries_path(anchor: "strategies")  %></li>
+            <li><i class="bx bx-chevron-right"></i> <%= link_to t('principles')  , root_path(anchor: "principles")  %></li>
+            <li><i class="bx bx-chevron-right"></i> <%= link_to "Team"  , team_path(anchor: "team")  %></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Social Networks</h4>
+          <p>
+            <% if I18n.locale == :en %>
+              Please also feel free to contact us on the social networks.
+            <% end %>
+            <% if I18n.locale == :de %>
+              Kontakt gerne auch in den Social Networks.
+            <% end %>
+          </p>
+          <div class="social-links mt-3">
+            <a href="https://www.xing.com/pages/steinmetzpartners-executive-consultants-gmbh" class="xing" target="_blank"><i class="bx bxl-xing"></i></a>
+            <a href="https://www.linkedin.com/company/steinmetzpartners---executive-search-consultants/?viewAsMember=true" class="linkedin" target="_blank"   ><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom clearfix">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="copyright">
+          &copy; Copyright <strong><span>SteinmetzPartners - Executive Consultants GmbH</span></strong>. All Rights Reserved
+        </div>
+      </div>
+      <div class="col-12 col-md-6 text-end ">
+        <%= link_to t('imprint') , info_imprint_path %>  &nbsp; | &nbsp; <%= link_to t('datasecurity') , info_datasecurity_path %>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->

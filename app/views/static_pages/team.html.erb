@@ -1,0 +1,249 @@
+<!-- ======= Breadcrumbs ======= -->
+<section  class="bg_sky  d-flex align-items-center justify-content-center " style="height: 250px;">
+  <div class="align-items-center justify-content-center " >
+    <h1 class="text-white display-2">
+    </h2 >
+  </div>
+</section>
+<!-- End Breadcrumbs -->
+<!-- ======= Team Section ======= -->
+<section id="team" class="team section-bg">
+  <div class="container"  >
+    <div class="section-title">
+      <h2>Team</h2>
+      <p>
+        <% if I18n.locale == :de %>
+          Wir haben Büros in 
+          <strong>
+            Frankfurt, Hamburg und Zürich.
+          </strong>
+          Unsere Berater sind langjährige Führungskräfte aus unseren Zielbranchen Beratung, 
+          IT und Finanzdienstleistung oder erfahrene Recruiting Manager, 
+          die Erfahrung in der Besetzung von Positionen in diesen Zielbranchen  haben. 
+        <% end %>
+        <% if I18n.locale == :en %>
+          We have offices in Frankfurt, Hamburg and Zurich. Our consultants are long-standing executives from our target sectors of consulting, IT and financial services or experienced recruiting managers who have experience in filling positions in these target sectors. 
+        <% end %>
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-lg-6"  >
+        <div class="member d-flex align-items-start">
+          <div class="pic"> <%= image_tag("hs_q_600_grau.png", class:"img-fluid"   )   %>  </div>
+          <div class="member-info">
+            <h4>
+              <%= link_to "Herbert K. Schmoll", profile_hs_path %>
+            </h4>
+            <span>
+              <% if I18n.locale == :de %>
+                Geschäftsführender Gesellschafter, Frankfurt
+              <% end %>
+              <% if I18n.locale == :en %>
+                Managing Partner, Frankfurt
+              <% end %>
+            </span>
+            <p>
+              <% if I18n.locale == :de %>
+                Herbert K. Schmoll besetzt Sales-, Berater- und Führungspositionen in der IT- und Managementberatung        
+              <% end %>
+              <% if I18n.locale == :en %>
+                Herbert K. Schmoll fills sales, specialist and management positions in IT and management consulting   
+              <% end %>
+            </p>
+            <div class="social">
+              <a href="mailto:hks@steinmetzpartners.com"><i class="ri-mail-fill"></i></a>
+              <a href="https://www.xing.com/profile/HerbertK_Schmoll/cv"  target="_blank"  ><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/herbert-k-schmoll-65319715/"  target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4 mt-lg-0"  >
+        <div class="member d-flex align-items-start">
+          <div class="pic"><%= image_tag("os_q_316_grau.png", class:"img-fluid"   )   %></div>
+          <div class="member-info">
+            <h4>  <%= link_to "Olga Schwarz ", profile_os_path %>         </h4>
+            <span>
+              <% if I18n.locale == :de %>
+                Partnerin / Gesellschafterin, Frankfurt
+              <% end %>
+              <% if I18n.locale == :en %>
+                Partner, Frankfurt
+              <% end %>
+            </span>
+            <p>
+              <% if I18n.locale == :de %>
+                Olga Schwarz besetzt Positionen im Bereich Office Management, Assistenz und Human Resources           
+              <% end %>
+              <% if I18n.locale == :en %>
+                Olga Schwarz fills positions in Office Management, Assistance and Human Resources
+              <% end %>
+            </p>
+            <div class="social">
+              <a href="mailto:o.schwarz@steinmetzpartners.com"><i class="ri-mail-fill"></i></a>
+              <a href="https://www.xing.com/profile/Olga_Schwarz16/cv" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/olga-schwarz-31ba6b22/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4"  >
+        <div class="member d-flex align-items-start">
+          <div class="pic"><%= image_tag("ts_q_270_grau.png", class:"img-fluid"   )   %></div>
+          <div class="member-info">
+            <h4>     <%= link_to "Thorsten Schwartz", profile_ts_path %>      </h4>
+            <span>Partner, Frankfurt</span>
+            <p>
+              <% if I18n.locale == :de %>
+                Thorsten Schwartz besetzt Sales-, Berater- und Führungspositionen in der IT- und in der IT-Beratung         
+              <% end %>
+              <% if I18n.locale == :en %>
+                Thorsten Schwartz fills sales, specialist and management positions in IT and IT consulting 
+              <% end %>
+            </p>
+            <div class="social">
+              <a href="mailto:schwartz@steinmetzpartners.com"><i class="ri-mail-fill"></i></a>
+              <a href="https://www.xing.com/profile/Thorsten_Schwartz/cv" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/thorsten-schwartz-053924/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4"  >
+        <div class="member d-flex align-items-start">
+          <div class="pic"><%= image_tag("yp_q_316_grau.png", class:"img-fluid"   )   %></div>
+          <div class="member-info">
+            <h4> <%= link_to "Yvonne Präschang ", profile_yp_path %>   </h4>
+            <span>
+              <% if I18n.locale == :de %>
+                Partnerin, Frankfurt
+              <% end %>
+              <% if I18n.locale == :en %>
+                Partner, Frankfurt
+              <% end %>
+            </span>
+            <p>
+              <% if I18n.locale == :de %>
+                Yvonne Präschang besetzt Consultants und  Manager 
+                bei IT- und Managementberatungsgesellschaften.           
+              <% end %>
+              <% if I18n.locale == :en %>
+                Yvonne Präschang recruits consultants and managers at IT and management consulting companies.  
+              <% end %>
+            </p>
+            <div class="social">
+              <a href="mailto:y.praeschang@steinmetzpartners.com"><i class="ri-mail-fill"></i></a>
+              <a href="https://www.xing.com/profile/Yvonne_Praeschang/cv" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/yvonne-pr%C3%A4schang-424299194/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4"  >
+        <div class="member d-flex align-items-start">
+          <div class="pic"><%= image_tag("hg_q_500_grau.png", class:"img-fluid"   )   %></div>
+          <div class="member-info">
+            <h4> <%= link_to "Karl-Heinrich (Heiner) Gräb ", profile_hg_path %>   </h4>
+            <span>Partner, Frankfurt</span>
+            <p>
+              <% if I18n.locale == :de %>
+                Karl-Heinrich (Heiner) Gräb besetzt Führungspositionen in der Beratung und  
+                Vertriebsmanagement-Positionen          
+              <% end %>
+              <% if I18n.locale == :en %>
+                Karl-Heinrich (Heiner) Gräb fills management positions in consulting and sales management positions 
+              <% end %>
+            </p>
+            <div class="social">
+              <a href="mailto:graeb@steinmetzpartners.com"><i class="ri-mail-fill"></i></a>
+              <a href="https://www.xing.com/profile/KarlHeinrichHeiner_Graeb" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/karl-heinrich-heiner-graeb-59721339/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4"  >
+        <div class="member d-flex align-items-start">
+          <div class="pic"><%= image_tag("js_q_450_grau.png", class:"img-fluid"   )   %></div>
+          <div class="member-info">
+            <h4> <%= link_to "Jürgen Schibilski ", profile_js_path %>   </h4>
+            <span>Partner, Hamburg</span>
+            <p>
+              <% if I18n.locale == :de %>
+                Jürgen Schibilski besetzt Sales- und Account-Management-Positionen bei Unternehmen aus dem IT Sektor.
+              <% end %>
+              <% if I18n.locale == :en %>
+                Jürgen Schibilski fills sales and account management positions at companies in the IT sector.
+              <% end %>
+            </p>
+            <div class="social">
+              <a href="mailto:schibilski@steinmetzpartners.com"><i class="ri-mail-fill"></i></a>
+              <a href="https://www.xing.com/profile/Juergen_Schibilski" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/juergenschibilski/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4"  >
+        <div class="member d-flex align-items-start">
+          <div class="pic"><%= image_tag("jm_q_300_grau.png", class:"img-fluid"   )   %></div>
+          <div class="member-info">
+            <h4> <%= link_to "Jürgen Metzger", profile_jm_path %>   </h4>
+            <span>
+              <% if I18n.locale == :de %>
+                Partner/Gesellschafter, Zürich
+              <% end %>
+              <% if I18n.locale == :en %>
+                Partner, Zurich
+              <% end %>
+            </span>
+            <p>
+              <% if I18n.locale == :de %>
+                Jürgen Metzger besetzt Berater-, Vertriebs- und Manager-Positionen bei Unternehmen in der Schweiz.
+              <% end %>
+              <% if I18n.locale == :en %>
+                Jürgen Metzger fills consulting, sales and management positions at companies in Switzerland.
+              <% end %>
+            </p>
+            <div class="social">
+              <a href="mailto:j.metzger@steinmetzpartners.com "><i class="ri-mail-fill"></i></a>
+              <a href="https://www.xing.com/profile/Juergen_Metzger6/cv" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/juergenmetzger/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4"  >
+        <div class="member d-flex align-items-start">
+          <div class="pic"><%= image_tag("kl_quadrat_1.png", class:"img-fluid"   )   %></div>
+          <div class="member-info">
+            <h4> <%= link_to "Kareen Ludwig ", profile_kl_path %>   </h4>
+            <span>
+              <% if I18n.locale == :de %>
+                Recruiting Spezialist / Researcher, München
+              <% end %>
+              <% if I18n.locale == :en %>
+                Recruiting Specialist / Researcher, Munic
+              <% end %>
+            </span>
+            <p>
+              <% if I18n.locale == :de %>
+                Kareen Ludwig identifiziert Kandidatinnen und Kandidaten in den 
+                Branchen IT, Management- und IT-Beratung.      
+              <% end %>
+              <% if I18n.locale == :en %>
+                Kareen Ludwig identifies candidates in the IT, management and IT consulting sectors.   
+              <% end %>
+            </p>
+            <div class="social">
+              <a href="mailto:ludwig@steinmetzpartners.com "><i class="ri-mail-fill"></i></a>
+              <a href="https://www.xing.com/profile/Kareen_Ludwig2" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/kareen-ludwig-a48823222/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Team Section -->

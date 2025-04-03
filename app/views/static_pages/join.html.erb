@@ -1,0 +1,206 @@
+<!-- Begin Main Content -->
+<section  class="bg_wall  d-flex align-items-center justify-content-center " style="height: 400px;">
+  <div class="align-items-center justify-content-center " >
+    <h1 class="text-white display-2">
+    </h2 >
+  </div>
+</section>
+<section  class="skills section-bg  ">
+  <div class="container" >
+    <div class="section-title mt-4">
+      <h2>
+        <% if I18n.locale == :de %>
+          Ihre Karriere bei uns in der Personalberatung ...  
+        <% end %>
+        <% if I18n.locale == :en %>
+          Your career with us in Executive Search Consulting ...  
+        <% end %>
+      </h2>
+      <h4 class="display-6" >
+        <% if I18n.locale == :de %>
+          ... der Weg zu mehr Erfolg und zu mehr Selbstbestimmung
+        <% end %>
+        <% if I18n.locale == :en %>
+          ... the path to more success and more self-determination
+        <% end %>
+      </h4>
+    </div>
+  </div>
+</section>
+<section  class="skills section-bg  ">
+  <div class="container"  >
+    <div class="row">
+      <div class="col-12">
+        <% if I18n.locale == :de %>
+          <p class="text-start">
+            Fühlen Sie sich in Ihrer Rolle als Manager in großen Organisationen zunehmend fremdbestimmt 
+            und durch begrenzten unternehmerischen Handlungsspielraum eingeschränkt? 
+            Stört es Sie, dass der überwiegende Teil Ihrer Arbeitserträge zur Finanzierung 
+            der Verwaltung und des Managements Ihrer Beratungsgesellschaft – und oft sogar der Muttergesellschaft 
+            im Ausland – aufgewendet wird? 
+            Oder stehen Sie am Ende Ihrer Karriere und möchten Ihre Kontakte, Management-Expertise und Erfahrung 
+            weiterhin sinnvoll einsetzen?    
+          </p>
+          <p class="text-start mt-3">
+            Dann laden wir Sie ein, sich über eine Karriere in der Personalberatung bei uns zu informieren. 
+            Sollten Sie bereits Positionen im Executive Search besetzen oder ein Team in den 
+            Branchen Informationstechnologie, Finanzdienstleistung, Private Equity, Management-, IT- oder Rechtsberatung 
+            führen, bringen Sie ideale Voraussetzungen für den Einstieg als Partner / Gesellschafter und 
+            Executive Search Consultant mit.
+          </p>
+        <% end %>
+        <% if I18n.locale == :en %>
+          <p class="text-start">
+            Do you feel that your role as a manager in large organizations is increasingly externally determined or limited by restricted entrepreneurial decision-making scope? As an executive search consultant, do you no longer want to accept the fact that more than 50% of your work contributes to the salaries of the administrative apparatus and management of your consulting company, as well as a parent company abroad? Are you at the end of your career, but want to continue to put your contacts, management expertise and experience to good use?      </p>
+          <p class="text-start mt-3">
+            Then we invite you to find out more about a career in personnel consulting with us. 
+            If you are already filling management positions in executive search or leading a team in the areas of sales, financial services, consulting or software engineering, you have the ideal qualifications to join us as an executive search consultant.
+          </p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+<section  class="skills  ">
+  <div class="container mt-5">
+    <div class="row align-items-center">
+      <h3 class="display-6 text-center mb-3">
+        <% if I18n.locale == :de %>
+          Warum Sie sich über eine Karriere bei uns informieren sollten?
+        <% end %>
+        <% if I18n.locale == :en %>
+          Why should you find out more about a career with us?
+        <% end %>
+      </h3>
+      <!-- Linke Seite: Card mit Foto -->
+      <div class="col-md-6 mt-3">
+        <div class="card">
+          <img src="<%= asset_path('hands_800x600.png') %>" class="card-img-top" alt="Beispielbild">
+          <div class="card-body">
+            <h5 class="card-title">
+              <% if I18n.locale == :de %>
+                Werden Sie Partner bei SteinmetzPartners
+              <% end %>
+              <% if I18n.locale == :en %>
+                Become a partner at SteinmetzPartners
+              <% end %>
+            </h5>
+            <p class="card-text">
+              <% if I18n.locale == :de %>
+                Arbeiten Sie in vollständiger Selbstbestimmung, befreien Sie sich von unproduktivem IT-, Marketing-
+                und Verwaltungsaufwand, nutzen Sie Synergien und Referenzen bei der Kunden-Akquisition,
+                fokussieren Sie sich zu 100% auf Ihren Erfolg, arbeiten Sie für sich und nicht für andere. 
+              <% end %>
+              <% if I18n.locale == :en %>
+                Work in complete self-determination, free yourself from unproductive IT, marketing and administrative work, use synergies and references in customer acquisition, focus 100% on your success. Work for yourself and not for others. 
+              <% end %>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Rechte Seite: Text -->
+      <div class="col-md-6 mt-3">
+        <p>
+          <% if I18n.locale == :de %>
+            <strong>
+              1. Vollständige Selbstbestimmung und unternehmerische Freiheit:
+            </strong>
+            Sie bestimmen selbst, wie Sie Ihren Tagesablauf gestalten, wie viel und wann Sie arbeiten, auf welche Marktsegmente Sie sich konzentrieren und welche Positionen Sie besetzen möchten. Auch die Konditionen für Ihre Projekte verhandeln Sie eigenständig mit Ihren Kunden – ohne Vorgaben von der Geschäftsführung.
+          <% end %>
+          <% if I18n.locale == :en %>
+            <strong>
+              1. Complete self-determination and entrepreneurial freedom:
+            </strong>
+            You decide for yourself how you organize your daily routine, how much and when you work, which market segments you want to focus on and which positions you want to fill. You also negotiate the conditions for your projects independently with your customers - without any specifications from the management.  
+          <% end %>
+        </p>
+        <p >
+          <% if I18n.locale == :de %>
+            <strong>
+              2. Vollständiger Fokus auf Ihren Erfolg:
+            </strong>
+            Rechnungsstellung, Kommunikation mit Steuerberatern und Behörden, Marketing, Website und Social Media,
+            GoBD-konforme Dokument-Archivierung – all das erledigen wir für Sie. 
+            Unsere speziell entwickelte IT-Plattform unterstützt Sie DSGVO-konform bei der Verwaltung von 
+            Kandidaten, Kunden und Projekten   sowie bei der 
+            Projektverwaltung und -abwicklung.
+            So bleibt Ihnen 100% Ihrer Zeit für das Wesentliche: Ihren Erfolg. 
+          <% end %>
+          <% if I18n.locale == :en %>
+            <strong>
+              2. A complete focus on your success:
+            </strong>
+            Invoicing, communication with tax advisors and authorities - we take care of all this for you. We also take care of marketing, website and social media. We take care of GoBD-compliant document archiving. Our specially developed IT platform supports you in managing candidates, clients and projects in compliance with the GDPR as well as in project management and processing with workflow support. This leaves you 100% of your time for the essentials: Your success. 
+          <% end %>
+        </p>
+        <p>
+          <% if I18n.locale == :de %>
+            <strong>
+              3. Für den eigenen Erfolg arbeiten, nicht für den Erfolg anderer:
+            </strong>
+          In vielen Unternehmen werden die Erträge der Berater genutzt, um den Verwaltungsapparat, die Gehälter der Partner, Gewinnmargen von 20 % und mehr für die Eigentümer sowie häufig die Kosten einer ausländischen Muttergesellschaft zu finanzieren. Zusätzlich werden erhebliche Rücklagen gebildet, um Umsatzausfälle abzusichern – bleiben diese ungenutzt, fließen sie als Gewinn an die Partner.
+            <strong>
+              Das Ergebnis: Nur ein kleiner Teil Ihres Umsatzes kommt tatsächlich bei Ihnen an.
+            </strong>
+           Bei uns hingegen sind Sie von Anfang an Partner: 90 % Ihres Umsatzes bleiben bei Ihnen. Es gibt keine hierarchischen Strukturen – alle arbeiten gleichberechtigt zusammen.
+          <% end %>
+          <% if I18n.locale == :en %>
+            <strong>
+              3. You work for your own success, not for others:
+            </strong>
+            In many consulting firms, a large proportion of the consultants' work goes towards financing the administrative apparatus, the salaries of partners and, in many cases, even the financing of a parent company abroad. In addition, the owners receive profit margins of 20% and more. In the end, only a small share remains for you. With us, you are a partner right from the start; we do not employ any consultants. There are no hierarchical structures, everyone has equal rights. This means that 90% of your turnover stays with you. 
+          <% end %>
+        </p>
+        <p>
+          <% if I18n.locale == :de %>
+            <strong>
+              4. Nutzen Sie Synergie-Effekte:
+            </strong>
+            Als Teil einer seit 2009 erfolgreich etablierten Gesellschaft haben Sie kein Akzeptanz-Problem beim Einkauf
+            großer Unternehmen, Sie können global größte Unternehmen als Referenz nutzen. 
+            Sie haben Zugriff auf einen großen  Talent-Pool,
+            profitieren von Ihrem eigenen  Talent-Pool, wenn Kandidaten Ihres Pools vermittelt werden.
+          <% end %>
+          <% if I18n.locale == :en %>
+            <strong>
+              4. Make use of synergy effects:
+            </strong>
+            As part of a company that has been successfully established since 2009, you have no acceptance problems when purchasing from large companies and can use the world's largest companies as a reference.You have access to a large pool of candidates and benefit from your own candidate pool when candidates from your pool are placed. 
+          <% end %>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section  class="skills section-bg  ">
+  <div class="container"  >
+    <div class="row">
+      <div class="col-12">
+        <h6 class="display-6 text-center my-3">
+          <% if I18n.locale == :de %>
+            Unternehmer sein – ohne Risiko fürs Privatvermögen
+          <% end %>
+          <% if I18n.locale == :en %>
+            Being an entrepreneur - without risk to private assets
+          <% end %>
+        </h6>
+        <p>
+          <% if I18n.locale == :de %>
+            Um das Privatvermögen unserer Berater (Partner/Gesellschafter) vollständig abzusichern und gleichzeitig die steuerlichen Vorteile einer Personengesellschaft zu nutzen, haben wir die Gesellschaftsform der GmbH & Co. KG gewählt. In diesem Modell trägt die Komplementärin – bei uns die SteinmetzPartners - Executive Consultants GmbH – das unternehmerische Risiko.
+          <% end %>
+          <% if I18n.locale == :en %>
+            In order to fully protect the private assets of our consultants (partners/shareholders) and at the same time utilize the tax advantages of a partnership, we have chosen the GmbH & Co. KG company form. In this model, the general partner - in our case SteinmetzPartners - Executive Consultants GmbH - bears the entrepreneurial risk.
+          <% end %>
+        </p>
+        <p>
+          <% if I18n.locale == :de %>
+            Das bedeutet: Sie profitieren von allen Vorteilen eines Unternehmers, ohne ein eigenes finanzielles Risiko einzugehen. Als Gesellschafter einer seit über 15 Jahren etablierten Personalberatung profitieren Sie von bewährten Prozessen, Standards und speziell zugeschnittener IT-Unterstützung. Zudem können Sie weltweit führende Unternehmen, Beratungsfirmen und Finanzdienstleister als Referenz für Ihre Akquise nutzen – ein perfektes Fundament für Ihren Erfolg.
+          <% end %>
+          <% if I18n.locale == :en %>
+            This means that you benefit from all the advantages of an entrepreneur without taking any financial risk of your own. As a partner in a recruitment consultancy that has been established for over 15 years, you benefit from proven processes, standards and specially tailored IT support. In addition, you can use leading global companies, consultancies and financial service providers as references for your acquisition - a perfect foundation for your success.
+          <% end %>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

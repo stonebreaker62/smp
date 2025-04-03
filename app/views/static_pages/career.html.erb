@@ -1,0 +1,128 @@
+<!-- ======= Breadcrumbs ======= -->
+<section  class="bg_handshake  d-flex align-items-center justify-content-center " style="height: 400px;">
+  <div class="align-items-center justify-content-center " >
+    <h1 class="text-white display-2">
+    </h2 >
+  </div>
+</section>
+<!-- End Breadcrumbs -->
+<!-- ======= Services Section ======= -->
+<section id="standards" class="pricing">
+  <div class="container"  >
+    <div class="section-title mt-5">
+      <h2 class="mt-5">
+        <% if I18n.locale == :de %>
+          Karrieren entwickeln 
+        <% end %>
+        <% if I18n.locale == :en %>
+          Developing Careers 
+        <% end %>
+      </h2>
+      <h6 class="display-6" >
+        <% if I18n.locale == :de %>
+          Personalberatung - mehr als Stellenbesetzen 
+        <% end %>
+        <% if I18n.locale == :en %>
+          Executive search - more than just filling vacancies 
+        <% end %>
+      </h6>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <% if I18n.locale == :de %>
+          <p class="text-start mt-3">
+            Personalberatung sollte mehr sein als das bloße Besetzen offener Stellen. Sie sollte sich an Ihren Interessen orientieren – an Ihrer Karriere und deren Weiterentwicklung. Sie verdienen eine partnerschaftliche, professionelle Beratung, die Sie strategisch voranbringt.
+            Unser Team bringt fundierte Erfahrung aus Führungspositionen mit. Wir haben Karrieren gefördert, Mitarbeiter entwickelt und diese Expertise in unsere Arbeit als Executive Search Consultants eingebracht. Davon können auch Sie profitieren.
+          </p>
+          <p class="text-start mt-3">
+            Sind Sie bereit für Ihren nächsten Karriereschritt? Wir unterstützen Sie dabei. 
+            Vielleicht besetzen wir gerade eine Position, die perfekt zu Ihren Zielen passt.
+          </p>
+          <p class="text-start mt-3">
+            <strong>
+              Vermeiden Sie Initiativbewerbungen, die oft in anonymen Bewerbermanagement-Systemen verschwinden. 
+            </strong>
+            Top-Professionals und Führungskräfte wechseln ihre Positionen über Personalberater – gezielt, diskret und effizient.
+          </p>
+          <p class="text-start mt-3">
+            Kontaktieren Sie uns direkt oder senden Sie Ihren Lebenslauf an <%= mail_to "info@steinmetzpartners.com" %>. 
+            Gemeinsam entwickeln wir eine klare Strategie und positionieren Sie erfolgreich – anonym und vertrauensvoll – in Ihrem Wunschunternehmen.
+          </p>
+        <% end %>
+        <% if I18n.locale == :en %>
+          <p class="text-start mt-3">
+            Executive search should be more than just filling vacancies. 
+            It should be geared towards your interests - your career and its further development.You deserve partnership-based, professional advice that will help you make strategic progress.
+            Our team has extensive experience in management positions. We have promoted careers, developed employees and brought this expertise to our work as executive search consultants. You can benefit from this too. 
+          </p>
+          <p class="text-start mt-3">
+            Are you ready for your next career move?  We can support you.
+            We may just be filling a position that perfectly matches your goals.
+          </p>
+          <p class="text-start mt-3">
+            <strong>
+              Avoid unsolicited applications, which often disappear in anonymous applicant management systems. 
+            </strong>
+            Top professionals and managers change positions via recruitment consultants - in a targeted, discreet and efficient manner.
+          </p>
+          <p class="text-start mt-3">
+            Contact us directly or send your CV to  <%= mail_to "info@steinmetzpartners.com" %>. 
+            Together we will develop a clear strategy and position you successfully - anonymously and confidentially - in your desired company.
+          </p>
+        <% end %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-6 col-md-6 d-flex align-items-stretch"  >
+        <div class="card" >
+          <%= image_tag('team_800x600.png', class: "card-img-top"   ) %>
+          <div class="card-body">
+            <h5 class="card-title">
+              <% if I18n.locale == :de %>
+                Optimierung Ihrer Karrierestrategie 
+              <% end %>
+              <% if I18n.locale == :en %>
+                Optimization of your career strategy
+              <% end %>
+            </h5>
+            <p class="card-text">
+              <% if I18n.locale == :de %>
+                Wir bieten Ihnen mehr als nur eine Vermittlung im Rahmen unserer Hiring-Projekte. Auf Wunsch nutzen wir unsere Führungserfahrung, um Sie aktiv bei der Optimierung Ihrer Karrierestrategie zu unterstützen.
+              <% end %>
+              <% if I18n.locale == :en %>
+                We offer you more than just a placement as part of our hiring projects. If you wish, we can use our management experience to actively support you in optimizing your career strategy. 
+              <% end %>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"  >
+        <div class="card" >
+          <%= image_tag('hands_800x600.png', class: "card-img-top"   ) %>
+          <div class="card-body">
+            <h5 class="card-title">
+              <% if I18n.locale == :de %>
+                Systematische Karriere-Entwicklung 
+              <% end %>
+              <% if I18n.locale == :en %>
+                Systematic Career Development 
+              <% end %>
+            </h5>
+            <p class="card-text">
+              <% if I18n.locale == :de %>
+                Wir unterliegen der Verpflichtung, Ihnen ausschließlich
+                Positionen anzubieten, die Sie in Ihrer 
+                Karriere einen Schritt voranbringen - durch die Vermittlung in eine 
+                höherwertigere Position mit mehr Verantwortung.
+              <% end %>
+              <% if I18n.locale == :en %>
+                We are committed to only offering you positions that will take you one step further in your career - by placing you in a more senior position with more responsibility. 
+              <% end %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Services Section -->

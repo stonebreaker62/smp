@@ -1,0 +1,98 @@
+<!-- ======= Breadcrumbs ======= -->
+<section  class="bg_equity  d-flex align-items-center justify-content-center " style="height: 400px;">
+  <div class="align-items-center justify-content-center " >
+    <h1 class="text-white display-2">
+      <% if I18n.locale == :de %>
+        Private Equity
+      <% end %>
+      <% if I18n.locale == :en %>
+        Private Equity
+      <% end %>
+    </h2 >
+  </div>
+</section>
+<!-- End Breadcrumbs -->
+<section class="inner-page">
+  <div class="container">
+    <h3 class="display-6 text-center">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <div class="icon"><i class='bx bx-money'></i></div>
+      </div>
+      <% if I18n.locale == :de %>
+        Private Equity: Branche in der Erholungsphase
+      <% end %>
+      <% if I18n.locale == :en %>
+        Private Equity: Industry in recovery phase 
+      <% end %>
+    </h3>
+    <p class="my-3">
+      <% if I18n.locale == :de %>
+        Das unsichere wirtschaftliche und politische Umfeld und steigende Zinssätze stellen  das Private-Equity-Segment vor erhebliche Herausforderungen. 
+        Nachdem die  Anzahl der Transaktionen zunächst deutlich zurückgegangen ist, hat sich die Branche inzwischen angepasst und erholt.
+        Mit Strategien, die die Inflationseffekte und geopolitischen Spannungen kompensieren, befindet sich die Branche in einer Erholungsphase.
+        Chancen, die sich durch Digitalisierung und technologische Innovationen eröffnen, werden konsequenter genutzt. 
+      <% end %>
+      <% if I18n.locale == :en %>
+        The uncertain economic and political environment and rising interest rates pose considerable challenges for the private equity segment. After an initial significant decline in the number of transactions, the sector has now adapted and recovered. With strategies that compensate for the effects of inflation and geopolitical tensions, the industry is in a recovery phase. Opportunities opened up by digitalization and technological innovations are being exploited more consistently.
+      <% end %>
+    </p>
+    <p>
+      <% if I18n.locale == :de %>
+        In einem zunehmend kompetitiven, wirtschaftlich und politisch unsicheren Marktumfeld benötigen Private-Equity-Gesellschaften  strategisch denkende Berater und Führungskräfte, die in der Lage sind, den Marktwert ihrer Beteiligungen zu steigern.
+      <% end %>
+      <% if I18n.locale == :en %>
+        In an increasingly competitive, economically and politically uncertain market environment, private equity companies need strategically-minded advisors and managers who are able to increase the market value of their investments. 
+      <% end %>
+    </p>
+    <hr />
+    <h5 class="display-6 text-center my-3">
+      <% if I18n.locale == :de %>Kunden und Positionen <% end %>
+      <% if I18n.locale == :en %>Clients and Positions  <% end %>
+    </h5>
+    <p>
+      <% if I18n.locale == :de %>
+        Wir unterstützen drei der top 10 Gesellschaften der Branche bei der Besetzung von 
+        <strong>
+          Positionen im Private Equity Consulting, im Office Management sowie Führungs- und Fachpositionen im Funktionsbereich Finance.
+        </strong>
+      <% end %>
+      <% if I18n.locale == :en %>
+        We support three of the top 10 companies in the industry in filling 
+        <strong>
+          positions in private equity consulting, office management as well as management and specialist positions in the functional area of finance. 
+        </strong>
+      <% end %>
+    </p>
+    <div class="row mt-3">
+      <hr />
+      <h5 class="display-6 text-center my-3">
+        <% if I18n.locale == :de %>Unsere Beraterin für Private Equity<% end %>
+        <% if I18n.locale == :en %>Our consultant for private equity<% end %>
+      </h5>
+      <div class="d-flex justify-content-center">
+        <div class="card mx-2" style="width: 22rem;">
+          <img src="<%= asset_path('os_profile_alt.png') %>" class="card-img-top  bg-secondary " alt="Olga Schwarz">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to "Olga Schwarz", profile_os_path %>
+              <br />
+              Partner
+            </h5>
+            <p class="card-text">
+              <i class="bi bi-telephone-fill"></i>&nbsp;
+              +49 151 56301161
+              <br />
+              <a href="mailto:o.schwarz@steinmetzpartners.com">
+                <i class="bi bi-envelope-fill"></i> &nbsp;
+                o.schwarz@steinmetzpartners.com
+              </a>
+            </p>
+            <div class="social text-center" style="font-size: 30px;"  >
+              <a href="https://www.xing.com/profile/Olga_Schwarz16/cv" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/olga-schwarz-31ba6b22/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

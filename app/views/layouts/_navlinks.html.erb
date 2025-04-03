@@ -1,0 +1,57 @@
+<% if session[:active] == 'home' %>
+  <li>  <%= link_to "Home", root_path(anchor: "central", active: "home")    , class:'nav-link scrollto active'   %></li>
+<% else %>
+  <li> <%= link_to "Home", root_path(anchor: "central", active: "home")  , class: 'nav-link scrollto'  %></li>
+<% end %>
+<% if session[:active] == 'executive' %>
+  <li>  <%= link_to I18n.t(:services), executive_path  , class:'nav-link scrollto active'   %></li>
+<% else %>
+  <li> <%= link_to I18n.t(:services), executive_path, class: 'nav-link scrollto'  %></li>
+<% end %>
+<li class="nav-item dropdown">
+  <% if session[:active] == 'team' %>
+    <%= link_to "Team", team_path, class: "nav-link dropdown-toggle", onclick: "handleAction();", id: "navbarDropdown", role: "button", data: { bs_toggle: "dropdown" } %>
+  <% else %>
+    <%= link_to "Team",team_path, class: "nav-link dropdown-toggle", onclick: "handleAction();", id: "navbarDropdown", role: "button", data: { bs_toggle: "dropdown" } %>
+  <% end %>
+  <ul>
+    <li><%= link_to "Olga Schwarz ", profile_os_path %> </li>
+    <li> <%= link_to "Herbert K. Schmoll", profile_hs_path %></li>
+    <li><%= link_to "Thorsten Schwartz", profile_ts_path %> </li>
+    <li><%= link_to "Yvonne Präschang ", profile_yp_path %>  </li>
+    <li><%= link_to "Karl-Heinrich (Heiner) Gräb ", profile_hg_path %> </li>
+    <li><%= link_to "Jürgen Schibilski ", profile_js_path %></li>
+    <li><%= link_to "Jürgen Metzger", profile_jm_path %></li>
+    <li><%= link_to "Kareen Ludwig", profile_kl_path %></li>
+  </ul>
+</li>
+<li class="nav-item dropdown">
+  <% if session[:active] == 'industries' %>
+    <%= link_to I18n.t(:industries), "#", class: "nav-link dropdown-toggle", onclick: "handleMainAction();", id: "navbarDropdown", role: "button", data: { bs_toggle: "dropdown" } %>
+  <% else %>
+    <%= link_to I18n.t(:industries), "#", class: "nav-link dropdown-toggle", onclick: "handleMainAction();", id: "navbarDropdown", role: "button", data: { bs_toggle: "dropdown" } %>
+  <% end %>
+  <ul>
+    <li><%= link_to I18n.t(:it), it_path    %></li>
+    <li><%= link_to I18n.t(:fsi), fsi_path    %></li>
+    <li><%= link_to I18n.t(:man_consulting), consulting_path    %></li>
+    <li><%= link_to I18n.t(:it_consulting), it_consulting_path    %></li>
+    <li><%= link_to I18n.t(:legal_consulting), legal_consulting_path    %></li>
+    <li><%= link_to I18n.t(:private_equity), equity_path    %></li>
+  </ul>
+</li>
+<% if session[:active] == 'career' %>
+  <li> <%= link_to I18n.t(:for_candidates), career_path  , class:'nav-link scrollto active'   %></li>
+<% else %>
+  <li> <%= link_to  I18n.t(:for_candidates), career_path  , class: 'nav-link scrollto'   %></li>
+<% end %>
+<% if session[:active] == 'join' %>
+  <li> <%= link_to I18n.t(:join), join_path , class:'nav-link scrollto active'   %></li>
+<% else %>
+  <li>  <%= link_to I18n.t(:join), join_path , class: 'nav-link scrollto'   %></li>
+<% end %>
+<% if session[:active] == 'join' %>
+  <li>  <%= link_to  "Jobs", external_content_path  , class:'nav-link scrollto active'   %></li>
+<% else %>
+  <li>  <%= link_to  "Jobs", external_content_path , class: 'nav-link scrollto'   %></li>
+<% end %>

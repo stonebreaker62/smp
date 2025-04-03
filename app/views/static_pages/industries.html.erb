@@ -1,0 +1,68 @@
+<!-- ======= Breadcrumbs ======= -->
+<section  class="bg_fsi  d-flex align-items-center justify-content-center " style="height: 400px;">
+  <div class="align-items-center justify-content-center " >
+    <h1 class="text-white display-2">
+      <% if I18n.locale == :de %>
+        Branchenkompetenz 
+      <% end %>
+      <% if I18n.locale == :en %>
+        Industry Expertise
+      <% end %>
+    </h2 >
+  </div>
+</section>
+<!-- End Breadcrumbs -->
+<section class="inner-page">
+  <div class="container">
+    <h3 class="display-6 text-center">
+      <% if I18n.locale == :de %>
+        Nur wer die Branche seiner Kunden kennt, kann auch beraten.
+      <% end %>
+      <% if I18n.locale == :en %>
+        Only those who know their customers' industry can also advise them. 
+      <% end %>
+    </h3>
+    <p class="my-3">
+      <% if I18n.locale == :de %>
+        Eine tiefgehende Vernetzung in der Branche sowie umfassendes Wissen über Strukturen, Business-Trends und Herausforderungen sind entscheidend für die erfolgreiche Besetzung von Positionen. Unsere Berater bringen langjährige Erfahrung in der Branche ihrer Kunden mit – entweder als Führungskräfte oder Personalberater. Sie kennen die spezifischen Anforderungen an die Kandidaten und können deren Eignung in den Assessments mit hoher Kompetenz beurteilen.  
+      <% end %>
+      <% if I18n.locale == :en %>
+        In-depth networking in the industry and comprehensive knowledge of structures, business trends and challenges are crucial for successfully filling positions. Our consultants have many years of experience in their clients' industries - either as managers or personnel consultants. They know the specific requirements of the candidates and can assess their suitability in the assessments with a high level of competence. 
+      <% end %>
+    </p>
+    <div class="row g-4  mt-3">
+      <div class=" col-12   ">
+        <p>
+          <% if I18n.locale == :de %>
+            Wir identifizieren für Sie Kandidatinnen und Kandidaten, die nicht nur über die notwendige Fachkompetenz verfügen, sondern auch die Bereitschaft mitbringen, sich an dynamische Entwicklungen anzupassen und den wachsenden Anforderungen erfolgreich gerecht zu werden.
+          <% end %>
+          <% if I18n.locale == :en %>
+            We identify candidates for you who not only have the necessary professional expertise, but also the willingness to adapt to dynamic developments and successfully meet growing demands.
+          <% end %>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Linke Spalte für das Foto -->
+      <div class="col-md-6 d-none d-lg-block text-center">
+        <%= image_tag "collage.png", width:"400px", alt: "Beschreibung des Bildes" %>
+      </div>
+      <!-- Rechte Spalte für den Text -->
+      <div class="col-md-6 mt-3">
+        <hr />
+        <h4 class="display-6"><%= link_to I18n.t(:it), it_path    %> </h4>
+        <hr />
+        <h4 class="display-6"><%= link_to I18n.t(:fsi), fsi_path    %></h4>
+        <hr />
+        <h4 class="display-6"><%= link_to I18n.t(:man_consulting), consulting_path    %></h4>
+        <hr />
+        <h4 class="display-6"><%= link_to I18n.t(:it_consulting), it_consulting_path    %></h4>
+        <hr />
+        <h4 class="display-6"><%= link_to I18n.t(:legal_consulting), legal_consulting_path    %></h4>
+        <hr />
+        <h4 class="display-6"><%= link_to I18n.t(:private_equity), equity_path    %></h4>
+        <hr />
+      </div>
+    </div>
+  </div>
+</section>

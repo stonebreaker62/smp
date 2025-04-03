@@ -1,0 +1,22 @@
+<%= turbo_frame_tag :cookies_modal do %>
+  <!-- Modal -->
+  <% unless  session[:cookies_accepted] %>
+    <section class="cookies-modal">
+      <div class="modal-body">
+       <p> <%=  I18n.t(:cookie_hint) %> 
+       </div>
+      <div class="modal-footer mt-3">
+        <%= link_to I18n.t(:reject), 
+            cookies_path(cookies_accepted: "reject"), 
+            method: :post, 
+            class: "btn btn-secondary",
+            onclick: "hideModal()" %>
+        <%= link_to I18n.t(:accept), 
+          cookies_path(cookies_accepted: "accept"), 
+            method: :post, 
+            class: "btn btn-primary mx-2",
+            onclick: "hideModal()" %>
+      </div>
+    </section>
+  <% end %>
+<% end %>

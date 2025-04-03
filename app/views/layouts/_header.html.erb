@@ -1,0 +1,21 @@
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top " style="background-color: #37517e"   >
+  <div class="container d-flex align-items-center">
+    <%= link_to image_tag("logo_blau.png"), root_path, :class => 'logo me-auto'  %>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    <nav id="navbar" class="navbar">
+      <ul>
+        <%= render 'layouts/navlinks' %>
+        <% if  I18n.locale == :de %>
+          <li>  <%= link_to "EN", en_path(:en),  class: 'getstarted scrollto'  %></li>
+        <% end %>
+        <% if  I18n.locale == :en %>
+          <li>  <%= link_to "DE", de_path(:de),  class: 'getstarted scrollto '  %></li>
+        <% end %>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+  </div>
+</header>
+<!-- End Header -->

@@ -1,0 +1,101 @@
+<!-- ======= Breadcrumbs ======= -->
+<section  class="bg_legalconsult  d-flex align-items-center justify-content-center " style="height: 400px;">
+  <div class="align-items-center justify-content-center " >
+    <h1 class="text-white display-2">
+      <% if I18n.locale == :de %>
+        Rechtsberatung
+      <% end %>
+      <% if I18n.locale == :en %>
+        Legal Advice
+      <% end %>
+    </h2 >
+  </div>
+</section>
+<!-- End Breadcrumbs -->
+<section class="inner-page">
+  <div class="container">
+    <h3 class="display-6 text-center">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <div class="icon"><i class="bx bx-user"></i></div>
+      </div>
+      <% if I18n.locale == :de %>
+        Rechtsberatung: Permanenter Kampf um die besten Talente
+      <% end %>
+      <% if I18n.locale == :en %>
+        Legal Advice: Permanent battle for the best talents
+      <% end %>
+    </h3>
+    <p class="my-3">
+      <% if I18n.locale == :de %>
+        Nicht nur aktuell, sondern schon lange stehen Rechtsberatungsunternehmen und Kanzleien vor immer denselben  Herausforderungen.
+        Die Erwartungshaltung der Mandanten in Bezug auf Schnelligkeit und Präzision steigt.
+        Der Druck durch nationale und internationale regulatorische Anforderungen wächst. 
+        Kanzleien müssen sich mit einer Vielzahl von Vorschriften auseinandersetzen, was eine präzise Kenntnis und effiziente Umsetzung erfordert, insbesondere in Bereichen wie ESG (Environmental, Social, Governance) und Datenschutz.
+        Relativ neu ist Integration von Legal-Tech-Lösungen wie KI-gestütztem Dokumentenmanagement und Automatisierung.  
+        Kanzleien, die diese Technologien nicht adaptieren, riskieren Wettbewerbsnachteile.
+      <% end %>
+      <% if I18n.locale == :en %>
+      <% end %>
+    </p>
+    <p>
+      <% if I18n.locale == :de %>
+        Rechtsberatung ist "People Business".
+        Es gibt seit Jahren einen "War for Talents", d. h. es wird immer schwieriger hochqualifizierte Juristen zu gewinnen und zu binden.
+        Top Juristen und junge Führungskräfte können diesen "War for Talents" nutzen, um ihre Karrieren sehr schnell voranzutreiben.
+      <% end %>
+      <% if I18n.locale == :en %>
+        However, such disruptive changes also open up new opportunities. Managers and employees who are prepared to question their previous knowledge and develop new skills in promising areas such as cloud architecture & security, change management, data management & data migration can benefit from this change. We identify and place precisely such talent for your company. 
+      <% end %>
+    </p>
+    <hr />
+    <h5 class="display-6 text-center my-3">
+      <% if I18n.locale == :de %>Kunden und Positionen <% end %>
+      <% if I18n.locale == :en %>Clients and Positions  <% end %>
+    </h5>
+    <p>
+      <% if I18n.locale == :de %>
+        Wir unterstützen eine der Top 10 Kanzleien in Deutschland und die deutsche Niederlassung von zwei der internationalen Top 10  bei der Besetzung von 
+        <strong>
+          Rechtsberatungspositionen sowie Positionen in den Funktionsbereichen Office Management und Finance.
+        </strong>
+      <% end %>
+      <% if I18n.locale == :en %>
+        We support some of Germany's leading system houses and other providers of IT services in filling 
+        <strong>
+          management and specialist positions in sales and IT consulting. 
+        </strong>
+      <% end %>
+    </p>
+    <div class="row mt-3">
+      <hr />
+      <h5 class="display-6 text-center my-3">
+        <% if I18n.locale == :de %>Unsere Beraterin für Rechtsberatung<% end %>
+        <% if I18n.locale == :en %>Our consultant for legal advice<% end %>
+      </h5>
+      <div class="d-flex justify-content-center">
+        <div class="card mx-2" style="width: 22rem;">
+          <img src="<%= asset_path('os_profile_alt.png') %>" class="card-img-top  bg-secondary " alt="Olga Schwarz">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to "Olga Schwarz", profile_os_path %>
+              <br />
+              Partner
+            </h5>
+            <p class="card-text">
+              <i class="bi bi-telephone-fill"></i>&nbsp;
+              +49 151 56301161
+              <br />
+              <a href="mailto:o.schwarz@steinmetzpartners.com">
+                <i class="bi bi-envelope-fill"></i> &nbsp;
+                o.schwarz@steinmetzpartners.com
+              </a>
+            </p>
+            <div class="social text-center" style="font-size: 30px;"  >
+              <a href="https://www.xing.com/profile/Olga_Schwarz16/cv" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/olga-schwarz-31ba6b22/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

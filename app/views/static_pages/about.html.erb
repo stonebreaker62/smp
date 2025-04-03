@@ -1,0 +1,179 @@
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+  <div class="container">
+    <ol>
+    </ol>
+    <h2><%= t(:about_us)%> </h2>
+  </div>
+</section>
+<!-- End Breadcrumbs -->
+<section class="about">
+  <div class="container"  >
+    <div class="row content">
+      <div class="col-lg-6">
+        <% if I18n.locale == :de %>
+          <p >
+            Seit 2009 unterstützen wir einige der weltweit führenden Unternehmen aus den Branchen
+            <strong>
+              Informationstechnologie 
+            </strong>
+            sowie
+            <strong>
+              Management- und IT-Beratung
+            </strong>
+            bei der Besetzung von Fach- und Führungspositionen in den Funktionseinheiten
+            <strong>
+              Vertrieb   
+            </strong>
+            und
+            <strong>
+              Beratung.
+            </strong>
+            Diese Branchen und Positionen sind bis heute Kernkompetenz geblieben.  
+          </p>
+          <p>
+            Inzwischen sind wir gewachsen, haben unser Team mit neuen Partnern verstärkt und unsere Expertise 
+            auf weitere Branchen wie 
+            <strong>
+              Private Equity, Finanzdienstleistungen und Rechtsberatung 
+            </strong>
+            erweitert. 
+          </p>
+          <p>
+            Bei den Positionen sind  
+            <strong>
+              Finance, HR und Office Management 
+            </strong>
+            hinzugekommen. 
+            <strong>
+              Diese Positionen besetzen wir branchenübergreifend. 
+            </strong>
+          </p>
+        <% end %>
+        <% if I18n.locale == :en %>
+          <p >
+            Since 2009, we have been supporting some of the world's leading companies in the 
+            <strong>
+              IT and management  consulting
+            </strong>
+            sectors in filling specialist and management positions in 
+            <strong> sales </strong>
+            and 
+            <strong> consulting </strong>.
+            These industries and positions have remained our core competence to this day.
+          </p>
+          <p>
+            Over the years, we have grown, strengthened our team with new partners and expanded our expertise to other 
+            industries such as 
+            <strong>private equity, financial services, IT and legal consulting</strong>.
+          </p>
+          <p>
+            <strong> Finance, HR and Office Management </strong>
+            have been added to the positions. 
+            <strong> FWe fill these positions across all sectors</strong>.
+          </p>
+        <% end %>
+      </div>
+      <div class="col-lg-6 ">
+        <% if I18n.locale == :de %>
+          <p>
+            Wir sind bis heute davon überzeugt, dass 
+            <strong>
+              Führungspositionen nur erfolgreich besetzen kann,  wer aus eigener Erfahrung weiß, was Führung bedeutet
+            </strong>
+            – und selbst Führungserfahrung in der  Branche der Kunden gesammelt hat.    
+            Diese Erfahrung setzen wir gezielt ein, um unsere Kunden dabei zu unterstützen, ihre Organisation auf ein höheres Level zu heben.
+          </p>
+          <p>
+            Gleichzeitig begleiten wir unsere Kandidatinnen und Kandidaten in den Bewerbungsprozessen als vertrauensvoller 
+            Partner,   der 
+            <strong>nicht nur vermittelt</strong>, 
+            der seine 
+            <strong>
+              Führungserfahrung einsetzt, um  Karrieren aktiv weiterzuentwickeln.
+            </strong>
+          </p>
+          <p>
+            Unser 
+            <strong> Talent-Pool  </strong>
+            ist inzwischen auf eine Größe von mehr als 
+            <strong>
+              30.000 Führungskräften und Professionals
+            </strong>
+            aus unseren Fokusbranchen angewachsen und ist die Basis für die schnelle Lieferung von  Ergebnissen.
+          </p>
+        <% end %>
+        <% if I18n.locale == :en %>
+          <p>
+            To this day, we are convinced that management positions can only be successfully filled by those who know from their own experience what leadership means - and who have themselves gained management experience in the client's industry. We use this experience to support our clients in taking their organization to a higher level.
+          </p>
+          <p>
+            At the same time, we accompany our candidates as a trustworthy partner who not only places them, but also actively promotes and sustainably develops their careers.
+          </p>
+          <p>
+            Our talent pool has grown to a size of more than 30,000 executives and professionals from our focus industries and is the basis for the rapid delivery of results. 
+          </p>
+        <% end %>
+      </div>
+    </div>
+    <div class="row content">
+      <div class="section-title mt-4 ">
+        <h3>
+          <% if I18n.locale == :de %>
+            Die Geschäftsführung stellt sich vor 
+          <% end %>
+          <% if I18n.locale == :en %>
+            The management team introduces itself
+          <% end %>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="container my-4">
+    <div class="row justify-content-center g-4">
+      <!-- Card 1 -->
+      <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+        <div class="card h-100">
+          <%= image_tag('hs_474x316.png', class: "card-img-top"   ) %>
+          <div class="card-body">
+            <h5 class="card-title">
+              <h5 class="card-title"> Herbert K. Schmoll</h5>
+              <h6> Geschäftsführender Gesellschafter</h6>
+              <p class="card-text">
+                <% if I18n.locale == :de %>
+                  Zusammen mit Frau Steinmetz habe ich die Gesellschaft in 2009 gegründet.
+                  Zuvor habe ich für einige der weltweit größten 
+                  IT-Unternehmen und Beratungsgesellschaften Deutschland-weit Vertriebsverantwortung getragen.
+                  In der Geschäftsführung bin ich für die Organisation, die Prozesse und die IT verantwortlich.
+                <% end %>
+                <% if I18n.locale == :en %>
+                  I founded the company together with Ms. Steinmetz in 2009. Previously, I was responsible for sales in Germany for some of the world's largest IT and consulting companies. On the management board, I am responsible for the organization, processes and IT.    
+                <% end %>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+          <div class="card h-100">
+            <%= image_tag('ss_474x316.jpg', class: "card-img-top"   ) %>
+            <div class="card-body">
+              <h5 class="card-title"> Sabine A. Steinmetz</h5>
+              <h6> Geschäftsführende Gesellschafterin</h6>
+              <p class="card-text">
+                <% if I18n.locale == :de %>
+                  Ich bin Mitgründerin der Gesellschaft und bin Geschäftsführende Gesellschafterin seit der Gründung in 2009.
+                  Zuvor habe ich eine Eventmanagement-Agentur gegründet und einige Jahre als Geschäftsführerin geführt.
+                  In der Geschäftsführung bin ich für Finance und die Interaktion mit Behörden und dem Steuerberater verantwortlich.
+                <% end %>
+                <% if I18n.locale == :en %>
+                  I am a co-founder of the company and have been a managing partner since it was founded in 2009. Before that, I founded an event management agency and ran it as managing director for several years. As Managing Director, I am responsible for finance and interaction with the authorities and the tax consultant.   
+                <% end %>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
