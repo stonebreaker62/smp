@@ -4,13 +4,14 @@ lock "~> 3.19.2"
 # Name der Anwendung und Repository
 set :application, "smp"
 set :repo_url, "git@github.com:stonebreaker62/smp.git"
+set :branch, 'main'
 
 # Verzeichnis auf dem Server, in dem die Anwendung installiert wird
 set :deploy_to, "/var/www/smp"
 
 # Ruby & Bundler-Konfiguration
 set :rbenv_type, :user
-set :rbenv_ruby, "1.2.0"  # Deine Ruby-Version
+set :rbenv_ruby, "3.4.2"  # Deine Ruby-Version
 
 # Puma-Konfiguration
 set :puma_threads, [ 4, 16 ]
