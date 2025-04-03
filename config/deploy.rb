@@ -30,5 +30,10 @@ set :puma_init_active_record, true  # Wenn du ActiveRecord verwendest
 set :linked_files, fetch(:linked_files, []).push("config/database.yml", "config/master.key")
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system", "public/uploads"
 
+set :bundle_flags, "--deployment --quiet"
+set :bundle_without, %w[development test].join(" ")
+set :bundle_path, -> { shared_path.join("bundle") } # Installiert Gems im shared-Verzeichnis
+set :bundle_binstubs, -> { shared_path.join("bin") }
+
 # Optional: Nginx-Konfiguration für Capistrano
 set :nginx_server_name, "steinmetzpartners.com www.steinmetzpartners.com steinmetzpartners.de www.steinmetzpartners.de"
