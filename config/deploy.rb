@@ -4,7 +4,7 @@ lock "~> 3.19.2"
 # Name der Anwendung und Repository
 set :application, "smp"
 set :repo_url, "git@github.com:stonebreaker62/smp.git"
-set :branch, 'main'
+set :branch, "main"
 
 # Verzeichnis auf dem Server, in dem die Anwendung installiert wird
 set :deploy_to, "/var/www/smp"
@@ -26,7 +26,8 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Wenn du ActiveRecord verwendest
 
 # Verzeichnisse und Dateien, die zwischen Deployments geteilt werden
-append :linked_files, "config/database.yml", "config/master.key"
+# append :linked_files, "config/database.yml", "config/master.key"
+set :linked_files, fetch(:linked_files, []).push("config/database.yml", "config/master.key")
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system", "public/uploads"
 
 # Optional: Nginx-Konfiguration für Capistrano
