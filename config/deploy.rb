@@ -12,6 +12,7 @@ set :deploy_to, "/var/www/smp"
 # Ruby & Bundler-Konfiguration
 set :rbenv_type, :user
 set :rbenv_ruby, "3.4.2"  # Deine Ruby-Version
+set :assets_roles, [ :web, :app ]
 
 # Puma-Konfiguration
 set :puma_threads, [ 4, 16 ]
@@ -27,7 +28,8 @@ set :puma_init_active_record, true  # Wenn du ActiveRecord verwendest
 
 # Verzeichnisse und Dateien, die zwischen Deployments geteilt werden
 # append :linked_files, "config/database.yml", "config/master.key"
-set :linked_files, fetch(:linked_files, []).push("config/database.yml", "config/master.key")
+set :linked_files, fetch(:linked_files, []).push("config/database.yml")
+append :linked_files, "config/master.key"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system", "public/uploads"
 
 set :bundle_flags, "--deployment --quiet"
