@@ -44,6 +44,7 @@ Rails.application.routes.draw do
   match "profile_jm" => "static_pages#profile_jm", via: %i[get post]
   match "profile_js" => "static_pages#profile_js", via: %i[get post]
   match "profile_kl" => "static_pages#profile_kl", via: %i[get post]
+  match "profile_jb" => "static_pages#profile_jb", via: %i[get post]
 
   match "fsi" => "static_pages#fsi", via: %i[get post]
   match "consulting" => "static_pages#consulting", via: %i[get post]

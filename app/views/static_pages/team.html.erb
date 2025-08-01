@@ -243,6 +243,35 @@
           </div>
         </div>
       </div>
+           <div class="col-lg-6 mt-4"  >
+        <div class="member d-flex align-items-start">
+          <div class="pic"><%= image_tag("jb_600x600.png", class:"img-fluid"   )   %></div>
+          <div class="member-info">
+            <h4> <%= link_to "Janine Brüning ", profile_jb_path %>   </h4>
+            <span>
+              <% if I18n.locale == :de %>
+                Partner, München
+              <% end %>
+              <% if I18n.locale == :en %>
+                Partner, Munic
+              <% end %>
+            </span>
+            <p>
+              <% if I18n.locale == :de %>
+                Janine Brüning unterstützt Kanzleien und Unternehmen bei der Besetzung von Legal Consulting- und Inhouse-Positionen.     
+              <% end %>
+              <% if I18n.locale == :en %>
+               Janine Brüning supports law firms and companies in filling legal consulting and in-house positions.
+              <% end %>
+            </p>
+            <div class="social">
+              <a href="mailto:briening@steinmetzpartners.com "><i class="ri-mail-fill"></i></a>
+              <a href="https://www.xing.com/profile/Janine_Bruening2/portfolio" target="_blank"><i class="ri-xing-fill"></i></a>
+              <a href="https://www.linkedin.com/in/janine-br%C3%BCning-7b4b0543/"   target="_blank"  > <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

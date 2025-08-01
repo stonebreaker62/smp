@@ -17,8 +17,10 @@ class StaticPagesController < ApplicationController
 
   def profile_kw; end
 
+  def profile_jb; end
+
   def about
-    session[:active] = 'about'
+    session[:active] = "about"
   end
 
   def external_content
@@ -26,59 +28,59 @@ class StaticPagesController < ApplicationController
   end
 
   def join
-    session[:active] = 'join'
+    session[:active] = "join"
   end
 
   def team
-    session[:active] = 'team'
+    session[:active] = "team"
   end
 
   def career
-    session[:active] = 'career'
+    session[:active] = "career"
   end
 
   def expert
-    session[:active] = 'expert'
+    session[:active] = "expert"
   end
 
   def executive
-    session[:active] = 'executive'
+    session[:active] = "executive"
   end
 
   def principles
-    session[:active] = 'principles'
+    session[:active] = "principles"
   end
 
   def positions
-    session[:active] = 'positions'
+    session[:active] = "positions"
   end
 
-  def industries 
-    session[:active] = 'industries'
+  def industries
+    session[:active] = "industries"
   end
 
-  def it 
-    session[:active] = 'industries'
+  def it
+    session[:active] = "industries"
   end
 
-  def it_consulting 
-    session[:active] = 'industries'
+  def it_consulting
+    session[:active] = "industries"
   end
 
-  def man_consulting 
-    session[:active] = 'industries'
+  def man_consulting
+    session[:active] = "industries"
   end
 
-  def legal_consulting 
-    session[:active] = 'industries'
+  def legal_consulting
+    session[:active] = "industries"
   end
 
-  def fsi 
-    session[:active] = 'industries'
+  def fsi
+    session[:active] = "industries"
   end
 
-  def equity 
-    session[:active] = 'industries'
+  def equity
+    session[:active] = "industries"
   end
 
   def imprint; end
@@ -86,6 +88,4 @@ class StaticPagesController < ApplicationController
   def datasecurity; end
 
   def terms; end
-
-
 end
