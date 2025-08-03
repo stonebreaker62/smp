@@ -19,6 +19,8 @@ class StaticPagesController < ApplicationController
 
   def profile_jb; end
 
+  def profile_ck; end
+
   def about
     session[:active] = "about"
   end
