@@ -2,32 +2,8 @@
   background: url("focus.png");
 }
 
-.hs_profile {
-  background: url("HKS_quadrat.png");
-  background-size: contain;
-  background-position-y: bottom;
-  background-position-x: center;
-  background-repeat: no-repeat;
-}
-
-.ts_profile {
-  background: url("ts_quadrat_t.png");
-  background-size: contain;
-  background-position-y: bottom;
-  background-position-x: center;
-  background-repeat: no-repeat;
-}
-
 .ck_profile {
   background: url("ck_basis_trans.png");
-  background-size: contain;
-  background-position-y: bottom;
-  background-position-x: center;
-  background-repeat: no-repeat;
-}
-
-.os_profile {
-  background: url("os_quadrat_t.png");
   background-size: contain;
   background-position-y: bottom;
   background-position-x: center;
@@ -42,8 +18,40 @@
   background-repeat: no-repeat;
 }
 
+.hs_profile {
+  background: url("HKS_quadrat.png");
+  background-size: contain;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.jb_profile {
+  background: url("jb_base1.png");
+  background-size: contain;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.jm_profile {
+  background: url("jm_quadrat_t.png");
+  background-size: contain;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
 .js_profile {
-  background: url("js_quadrat_1.png");
+  background: url("jus_quer.png");
+  background-size: contain;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.kl_profile {
+  background: url("kl_quadrat_t.png");
   background-size: contain;
   background-position-y: bottom;
   background-position-x: center;
@@ -66,8 +74,16 @@
   background-repeat: no-repeat;
 }
 
-.jm_profile {
-  background: url("jm_quadrat_t.png");
+.os_profile {
+  background: url("os_quadrat_t.png");
+  background-size: contain;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.ts_profile {
+  background: url("ts_quadrat_t.png");
   background-size: contain;
   background-position-y: bottom;
   background-position-x: center;
@@ -82,21 +98,6 @@
   background-repeat: no-repeat;
 }
 
-.jb_profile {
-  background: url("jb_base1.png");
-  background-size: contain;
-  background-position-y: bottom;
-  background-position-x: center;
-  background-repeat: no-repeat;
-}
-
-.kl_profile {
-  background: url("kl_quadrat_t.png");
-  background-size: contain;
-  background-position-y: bottom;
-  background-position-x: center;
-  background-repeat: no-repeat;
-}
 
 .bg_fsi {
   background: url("bank.png");
@@ -230,5 +231,6 @@ img {
 }
 
 .card-img-top {
-  object-fit: cover; /* Zuschneiden des Bildes */
+  object-fit: cover;
+  /* Zuschneiden des Bildes */
 }
